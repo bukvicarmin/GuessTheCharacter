@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Character!</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <main>
+        <div class="welcome-text">
+            <p class="welcome-header">Hello!</p>
+            <p class="welcome-p">Thank you for checking out my game. This is the first project that I truly finished from start to finish, despite it not being actually finished as I always find something to include. There is a lot to improve both gameplay and code wise.</p>
+            <p class="welcome-issues">There is an issue where a character may appear twice among the choosable options. I've tried to resolve it using different ways but it still seems to sneak in sometimes. Sorry about that.</p>
+            <p class="welcome-closing">Regardless, I am open to feedback and ideas so feel free to let me know if you'd like to see anything added, or if you feel like your idea would be a great fit!</p>
+            <p class="welcome-contacts"> You can reach me here</p>
+            <p class="contacts">email: bukvicarmin@gmail.com | Reddit: u/Mentiqq</p>
+            <p class="welcome-thanks">Thank you! :)</p>
+            <button class="welcomeBtn">Okay ;)</button>
+        </div>    
+
+
+
+        <div class="game-container">
+            <div class="game-bgc">
+                <img src="src/mario-walking.gif" class="walking-mario">
+            </div>
+            <div class="greeting-text-starter">
+                <div class="greeting-text-wrapper">
+                    <img class="logo-sm" src="src/logo-sm.png" alt="">
+                    <p class="greeting-text">GUESS THE<br><span>CHARACTER</span></p>
+                    <img class="greeting-star star1" src="src/star.png" alt="">
+                    <img class="greeting-star star2" src="src/star.png" alt="">
+                    <img class="greeting-star star3" src="src/star.png" alt="">
+                </div>
+                <button class="startBtn">START</button>
+            </div>
+
+            <div class="game-guide">
+                <div class="guide-table">
+                    <p class="rule-heading">HOW TO PLAY</p>
+                    <p class="rule-desc">Based on the character description, choose one from the options below the question. Do you know them all?</p>
+                    <button class="understoodBtn">UNDERSTOOD</button>
+                </div>
+                <img class="guide-toad" src="src/toad.png" alt="">
+            </div>
+       
+            <div class="connecting-scene">
+                <p class="connecting-text"></p>
+            </div>
+
+            <div class="question-container">
+                <p class="round-counter"></p>
+                <p class="question-timer"></p>
+                <div class="question-box">
+                    <p class="question">
+                    </p>
+                </div>
+                <div class="answer-options">
+                    <div class="options option-box0">
+                        <p class="option0 optTxt">
+                        </p>
+                    </div>
+                    <div class="options option-box1">
+                        <p class="option1 optTxt">
+                        </p>
+                    </div>
+                    <div class="options option-box2">
+                        <p class="option2 optTxt">
+                        </p>
+                    </div>
+                </div>
+                <div class="score-wrapper">
+                    <p class="score-text">SCORE: </p>
+                    <p class="score">0</p>
+                </div>
+            </div>
+
+            <div class="result-screen">
+                <p class="result-header">
+                    <span>C</span>
+                    <span>o</span>
+                    <span>n</span>
+                    <span>g</span>
+                    <span>r</span>
+                    <span>a</span>
+                    <span>t</span>
+                    <span>u</span>
+                    <span>l</span>
+                    <span>a</span>
+                    <span>t</span>
+                    <span>i</span>
+                    <span>o</span>
+                    <span>n</span>
+                    <span>s</span>
+                    <span>!</span>
+                </p>
+                <p class="failed-header">
+                    <span>T</span>
+                    <span>o</span>
+                    <span>o</span>
+                    <span>&nbsp;</span>
+                    <span>b</span>
+                    <span>a</span>
+                    <span>d</span>
+                    <span>.</span>
+                    <span>.</span>
+                    <span>.</span>
+                </p>
+                <div class="results-table-wrapper">
+                    <div class="result-table">
+                        <img class="result-mario" src="src/mario.png" alt="">
+                        <p class="score-heading">RESULTS</p>
+                        <p class="score-desc"></p>
+                        <div class="scores-wrapper">
+                            <div class="current-score-wrapper">
+                                <p class="current-score-text">score:</p>
+                                <p class="current-score"></p>
+                            </div>
+                            <div class="high-score-wrapper">
+                                <p class="high-score-text">High score:</p>
+                                <p class="high-score"></p>
+                            </div>
+                        </div>
+                        <button class="restartBtn">PLAY AGAIN!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+
+
+</body>
+</html>
